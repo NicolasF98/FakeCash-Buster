@@ -86,3 +86,15 @@ if uploaded_file:
         # Cas d'erreur
         except Exception as e:
             st.error(f"Erreur au cours de la prédiction : {e}")
+
+
+#-------------------------# Signatuere/crédit #-------------------------#
+
+
+st.markdown("""
+<hr style="border:1px solid #eee; margin-top: 50px;"/>
+<div style="text-align: center; font-size: 14px; color: gray;">
+    Application réalisée par <strong>Nicolas FOURNOUT</strong><br>
+    <a href="https://www.linkedin.com/in/nfournout/" target="_blank">Mon profil LinkedIn</a>
+</div>
+""", unsafe_allow_html=True)
