@@ -29,8 +29,8 @@ st.image("https://www.safescan.com/static/images/safescan-cd-1124x720-2017-04/17
 
 # description sous l'image
 st.markdown("""
-**Notre algorithme** utilise une **regression logistique optimisé par Model-based Feature Selection**,  
-ce qui garantit une **détection presque parfaite des faux positifs**.
+**Notre algorithme** utilise une **régression logistique optimisée par Model-based Feature Selection**,  
+ce qui garantit une **détection presque parfaite des faux billets**.
 """)
 
 # Upload du fichier CSV
@@ -78,7 +78,7 @@ if uploaded_file:
             # Option de telechargement
             csv_result = data.to_csv(index=False).encode('utf-8')
             st.download_button(
-                label="📥 Télécharger les résultat 📥",
+                label="📥 Télécharger les résultats 📥",
                 data=csv_result,
                 file_name='predictions_nif.csv',
                 mime='text/csv'
